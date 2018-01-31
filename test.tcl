@@ -10,5 +10,6 @@ parray details
 
 set_shipping_cost $my_order [shipping_cost $details(total_weight) 1]
 
+array unset details
 array set details [get_order_details $my_order]
 parray details
